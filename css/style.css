@@ -1,0 +1,32 @@
+body{
+
+}
+#invalid{
+    display:none ;
+    margin-bottom: 20px;
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 10px;
+    border: 1px solid red;
+}
+#passshort{
+    display:none ;
+    margin-bottom: 20px;
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 10px;
+    border: 1px solid red;
+}
+#invalid.showen,#passshort.showen{
+    display: block;
+}
+
+form
+{
+    border: none;
+    border-radius: 20px;
+     background: linear-gradient(
+        to right bottom, 
+        rgb(255,255,255,0.7),
+        rgb(255,255,255,0.3)
+    );
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- Start Quiz  -->
+    <div class="start_btn"><button><i class="fas fa-power-off start_btn"></i></button></div>
+    <div class="marklist">
+        <head><h2>Marked Questions</h2></head>
+        <div class="markedlistque"> 
+        </div>
+    </div>
+    <div class="quiz_page">
+      <header>
+        <div class="title">MCQ Quiz</div>
+        <div class="timer">
+          <div class="time_left">Time left</div>
+          <div class="time_sec"></div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <hr>
+      <section>
+          <div class="qhead">
+        <div class="question">
+          <!-- <span>I am not___this film</span> -->
+        </div>
+        <button class="markbtn">mark</button>
+        </div>
+        <div class="choices_list">
+          <!-- <div class="choice">
+                    <span>liking</span>
+                    <div class="icon tick"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="choice">
+                    <span>enjoying</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="choice">
+                    <span>happy</span>
+                     <div class="icon tick"><i class="fas fa-times"></i></div> 
+                </div> -->
+        </div>
+        </section>
+      
+      <!-- Footer of quiz -->
+      <footer>
+          <button class="prev_btn"><i class="fas fa-arrow-circle-left"></i></button>
+        <div class="total_no">
+          <span>
+            <p class="qnumber"></p>
+            of
+            <p class="totalq"></p>
+            Questions
+            </span>
+        </div>
+        <button class="next_btn"><i class="fas fa-arrow-circle-right"></i></button>
+      </footer>
+      <div class="submit">
+        <button class="submit_btn">Submit</button>
+      </div>
+    </div>
+
+    <!-- Result -->
+
+    <div class="result_page ">
+      <div class="icon">
+        <i >✨</i>
+      </div>
+      <div class="submitted_text">Your answers have been submitted.</div>
+      <div class="score">
+        <!-- <span>and sorry, you only got <p>2</p> out of <p>5</p></span> -->
+      </div>
+
+      <div class="buttons">
+        <button class="restart">Restart Quiz</button>
+        <p class="quit" onclick="logout()">Log out</p>
+      </div>
+    </div>
+  </body>
+  <script src="js/questions.js"></script>
+  <script src="js/quiz.js"></script>
+</html>
